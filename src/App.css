@@ -1,0 +1,329 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.body{
+  width: 100%;
+  height: 100vh;
+}
+ul{
+  list-style: none;
+  display: flex;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 100%, 97%);
+}
+.app .container{
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 65%;
+  height: 80%;
+  
+}
+.app .container .steps{
+  display: flex;
+flex-direction: column;
+padding: 1rem;
+width: 30%;
+height: 100%;
+background-image: url(./images/bg-sidebar-desktop.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.app .container .steps  .step {
+  padding: 1rem;
+}
+.app .container .steps  .step ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .container .steps  .step p{
+  color: hsl(231, 11%, 63%);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.app .container .steps  .step ul li{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+}
+.app .container .steps  .step .number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  font-size: 12px;
+  color: white;
+}
+.info{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  position: relative;
+}
+.info .top h2{
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+  font-size: 30px;
+
+}
+.info .top p{
+  /* font-size: 14px; */
+  color: hsl(231, 11%, 63%);
+}
+.center1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cont{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem ;
+}
+.cont input{
+  width: 100%;
+  height: 6vh;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(229, 24%, 87%);
+}
+label{
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 4px;
+}
+.next{
+  width: fit-content;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: hsl(213, 96%, 18%);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  align-self: flex-end;
+  transform: translateX(-1rem);
+  position: absolute;
+  top: 90%;
+  left: 73%;
+}
+#active{
+  background-color: hsl(228, 100%, 84%);
+  color: hsl(213, 96%, 18%);
+}
+.nameError,.emailError,.phoneError{
+  align-self: flex-end;
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+}
+.p2 .top ul{
+  display: flex;
+  justify-content: space-between
+}
+.p2 .top ul li{
+  padding: 3rem ;
+  width: 31%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 1px solid hsl(229, 24%, 87%);
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+.p2 .top ul li:hover{
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 100%, 62%) ;
+}
+.p2 .bottom{
+  display:flex ;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem ;
+  background-color:   hsl(229, 24%, 87%);
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.toggle{
+  width: 70px;
+  height: 30px;
+  border-radius: 70px;
+  background-color: hsl(213, 96%, 18%);
+  position: relative;
+  cursor: pointer;
+}
+.toggle .disabled{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 70px;
+  background-color: white;
+  top: 15%;
+  left: 5%;
+}
+.toggle .abled{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 70px;
+  background-color: white;
+  top: 15%;
+  left: 65%;
+}
+.ball{
+  transition: 0.3s;
+}
+.p2 .bottom p {
+  color: hsl(213, 96%, 18%);
+}
+.hidden{
+  font-size: 9px;
+  display: flex;
+  display: none;
+}
+#activeLi{
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color:hsl(217, 100%, 97%) ;
+}
+.center3{
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-evenly;
+}
+.center3 .card{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.center3 .card:hover{
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 100%, 62%) ;
+}
+.center3 .card .left{
+  display: flex;
+}
+.center3 .card .text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.center3 .card .text h3{
+  font-size: 16px;
+  color: #121212;
+}
+.center3 .card .text p{
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+}
+input[type = checkbox]{
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  accent-color: hsl(243, 100%, 62%);
+}
+.center3 .card .price{
+  align-self: center;
+  color: hsl(243, 100%, 62%);
+}
+.final{
+  margin-top: 10%;
+}
+.final .top {
+  background-color:hsl(217, 100%, 97%) ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+.final .top .left ,.final .top .adds div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.oniChan{
+  align-self:center !important ;
+  color: hsl(213, 96%, 18%) !important;
+  font-size: 22px;
+}
+.total{
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+.total p:last-child{
+  font-size: 20px;
+  color: hsl(243, 100%, 62%);
+}
+.change{
+  background-color: hsl(217, 100%, 97%);
+  border: none;
+  outline: none;
+  color: hsl(231, 11%, 63%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.f{
+  color: red;
+  color: hsl(213, 96%, 18%);
+}
+.thanks{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thanks .container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 90%;
+height: 50%;
+}
+.thanks .container img{
+  width: 20%;
+  justify-self: center;
+  align-self: center;
+}
+.thanks .container h2{
+  color: hsl(213, 96%, 18%);
+  font-size: 22px;
+  text-align: center;
+}
+.thanks .container p{
+  color: hsl(231, 11%, 63%);
+  text-align: center;
+}
